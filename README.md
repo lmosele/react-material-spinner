@@ -1,8 +1,10 @@
 # [React](http://facebook.github.io/react/)-spinner
 
-Zero configuration loading spinner.
+Based on chenglou's [react-spinner](https://github.com/chenglou/react-spinner).
 
-[Live demo](https://rawgit.com/chenglou/react-spinner/master/example/index.html) from the example folder. (To build it locally, clone this repo, `npm install && npm start` then open http://localhost:3000/example/)
+Zero configuration material design loading spinner w/ color options
+
+(To build example locally, clone this repo, `npm install && npm start` then open http://localhost:3000/example/)
 
 ## install
 

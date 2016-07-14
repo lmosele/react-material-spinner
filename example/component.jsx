@@ -9,7 +9,7 @@ const App = React.createClass({
     };
     return (
       <div>
-        <Spinner style={style} pathColor="gray" />
+        <Spinner style={style} pathColor="blue" />
       </div>
     );
   }
