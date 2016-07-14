@@ -1,35 +1,161 @@
-.react-spinner {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  top: 50%;
-  left: 50%;
+.react-svg-spinner {
+  display: block;
+  width: 5%;
+  max-width: 40%;
+  margin: 0 auto;
+  -webkit-animation: rotator 1.4s linear infinite;
+          animation: rotator 1.4s linear infinite;
 }
 
-.react-spinner_bar {
-  -webkit-animation: react-spinner_spin 1.2s linear infinite;
-  -moz-animation: react-spinner_spin 1.2s linear infinite;
-  animation: react-spinner_spin 1.2s linear infinite;
-  border-radius: 5px;
-  background-color: white;
-  position: absolute;
-  width: 20%;
-  height: 7.8%;
-  top: -3.9%;
-  left: -10%;
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
 }
 
-@keyframes react-spinner_spin {
- 0% { opacity: 1; }
- 100% { opacity: 0.15; }
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+.react-svg-path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+          
 }
 
-@-moz-keyframes react-spinner_spin {
- 0% { opacity: 1; }
- 100% { opacity: 0.15; }
+.react-svg-path.blue {
+   -webkit-animation: dash 1.4s ease-in-out infinite, colors-main 5.6s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors-main 5.6s ease-in-out infinite;
+}
+.react-svg-path.white {
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors-white 5.6s ease-in-out infinite !important;
+          animation: dash 1.4s ease-in-out infinite, colors-white 5.6s ease-in-out infinite !important;
 }
 
-@-webkit-keyframes react-spinner_spin {
- 0% { opacity: 1; }
- 100% { opacity: 0.15; }
+.react-svg-path.black {
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors-black 5.6s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors-black 5.6s ease-in-out infinite;
+}
+
+.react-svg-path.grey,
+.react-svg-path.gray {
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors-gray 5.6s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors-gray 5.6s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes colors-main {
+  0% {
+    stroke: #5db9d1;
+  }
+  100% {
+    stroke: #0d596d;
+  }
+}
+
+@keyframes colors-main {
+  0% {
+    stroke: #5db9d1;
+  }
+  100% {
+    stroke: #0d596d;
+  }
+}
+
+@-webkit-keyframes colors-white {
+  0% {
+    stroke: #eee;
+  }
+  100% {
+    stroke: #eee;
+  }
+}
+
+@keyframes colors-white {
+  0% {
+    stroke: #eee;
+  }
+  100% {
+    stroke: #eee;
+  }
+}
+
+@-webkit-keyframes colors-black {
+  0% {
+    stroke: #083c4a;
+  }
+  100% {
+    stroke: #0d596d;
+  }
+}
+
+@keyframes colors-black {
+  0% {
+    stroke: #083c4a;
+  }
+  100% {
+    stroke: #0d596d;
+  }
+}
+
+@-webkit-keyframes colors-gray {
+  0% {
+    stroke: #d3d3d3;
+  }
+  100% {
+    stroke: #717171;
+  }
+}
+
+@keyframes colors-gray {
+  0% {
+    stroke: #d3d3d3;
+  }
+  100% {
+    stroke: #717171;
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
 }

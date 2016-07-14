@@ -1,28 +1,24 @@
 import React from 'react';
 
 const Spinner = React.createClass({
+   
   render: function() {
-    let bars = [];
-    const props = this.props;
-
-    for (let i = 0; i < 12; i++) {
-      let barStyle = {};
-      barStyle.WebkitAnimationDelay = barStyle.animationDelay =
-        (i - 12) / 10 + 's';
-
-      barStyle.WebkitTransform = barStyle.transform =
-        'rotate(' + (i * 30) + 'deg) translate(146%)';
-
-      bars.push(
-        <div style={barStyle} className="react-spinner_bar" key={i} />
-      );
-    }
-
+    
     return (
-      <div {...props} className={(props.className || '') + ' react-spinner'}>
-        {bars}
+      <div pathColor={this.props.pathColor}>
+        <svg
+         className={'react-svg-spinner ' + (this.props.className || '')} 
+         viewBox="0 0 66 66">
+          <circle className={'react-svg-path ' + (this.props.pathColor || '')} fill="none" strokeWidth="6" strokeLinecap="round" cx="33" cy="33" r="30"></circle>
+        </svg>
       </div>
     );
+  },
+
+  getDefaultProps: function() {
+    return {
+      pathColor: 'gray'
+    };
   }
 });
 

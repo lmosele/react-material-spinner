@@ -6,11 +6,10 @@ const App = React.createClass({
     const style = {
       height: 50,
       width: 50,
-      backgroundColor: 'black'
     };
     return (
-      <div style={style}>
-        <Spinner />
+      <div>
+        <Spinner style={style} pathColor="gray" />
       </div>
     );
   }
