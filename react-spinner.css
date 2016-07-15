@@ -1,11 +1,29 @@
 .react-svg-spinner {
   display: block;
   width: 5%;
-  max-width: 40%;
+  max-width: 80px;
   margin: 0 auto;
   -webkit-animation: rotator 1.4s linear infinite;
           animation: rotator 1.4s linear infinite;
 }
+
+.react-svg-spinner.spinner-size-large {
+  width: 6%;
+  max-width: 80px;
+}
+.react-svg-spinner.spinner-size-medium {
+  width: 3%;
+  max-width: 80px;
+}
+.react-svg-spinner.spinner-size-small {
+  width: 1.8%;
+  max-width: 80px;
+}
+.react-svg-spinner.spinner-size-xsmall {
+  width: 1%;
+  max-width: 80px;
+}
+
 
 @-webkit-keyframes rotator {
   0% {
@@ -37,24 +55,52 @@
 }
 
 .react-svg-path.blue {
-   -webkit-animation: dash 1.4s ease-in-out infinite, colors-main 5.6s ease-in-out infinite;
-          animation: dash 1.4s ease-in-out infinite, colors-main 5.6s ease-in-out infinite;
+   -webkit-animation: dash 1.4s ease-in-out infinite, colors-main 4s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors-main 4s ease-in-out infinite;
 }
 .react-svg-path.white {
-    -webkit-animation: dash 1.4s ease-in-out infinite, colors-white 5.6s ease-in-out infinite !important;
-          animation: dash 1.4s ease-in-out infinite, colors-white 5.6s ease-in-out infinite !important;
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors-white 4s ease-in-out infinite !important;
+          animation: dash 1.4s ease-in-out infinite, colors-white 4s ease-in-out infinite !important;
 }
 
 .react-svg-path.black {
-    -webkit-animation: dash 1.4s ease-in-out infinite, colors-black 5.6s ease-in-out infinite;
-          animation: dash 1.4s ease-in-out infinite, colors-black 5.6s ease-in-out infinite;
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors-black 4s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors-black 4s ease-in-out infinite;
 }
 
 .react-svg-path.grey,
 .react-svg-path.gray {
-    -webkit-animation: dash 1.4s ease-in-out infinite, colors-gray 5.6s ease-in-out infinite;
-          animation: dash 1.4s ease-in-out infinite, colors-gray 5.6s ease-in-out infinite;
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors-gray 4s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors-gray 4s ease-in-out infinite;
 }
+
+.spinner-animation-slow .react-svg-path {
+   -webkit-animation-duration: 5.6s; 
+    animation-duration: 5.6s;
+}
+.spinner-animation-medium .react-svg-path {
+   -webkit-animation-duration: 4s; 
+    animation-duration: 4s;
+}
+.spinner-animation-fast .react-svg-path {
+   -webkit-animation-duration: 1s; 
+    animation-duration: 1s;
+}
+
+.react-svg-spinner.spinner-animation-slow {
+  -webkit-animation: rotator 5.6s linear infinite;
+          animation: rotator 5.6s linear infinite;
+}
+.react-svg-spinner.spinner-animation-medium {
+  -webkit-animation: rotator 4s linear infinite;
+          animation: rotator 4s linear infinite;
+}
+.react-svg-spinner.spinner-animation-fast {
+  -webkit-animation: rotator 1s linear infinite;
+          animation: rotator 1s linear infinite;
+}
+
+
 
 
 @-webkit-keyframes colors-main {
