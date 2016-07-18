@@ -59,8 +59,8 @@
           animation: dash 1.4s ease-in-out infinite, colors-main 4s ease-in-out infinite;
 }
 .react-svg-path.white {
-    -webkit-animation: dash 1.4s ease-in-out infinite, colors-white 4s ease-in-out infinite !important;
-          animation: dash 1.4s ease-in-out infinite, colors-white 4s ease-in-out infinite !important;
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors-white 4s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors-white 4s ease-in-out infinite;
 }
 
 .react-svg-path.black {
