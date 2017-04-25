@@ -8,27 +8,30 @@ Zero configuration material design loading spinner w/ color options
 
 ## API
 
+
+# Spinner Colors
+Defined using pathColor (Todo: make this system more configurable)
 ```html
- <h5>Spinner Colors</h5>
      <Spinner pathColor='gray' size='small' animation='slow' />
-     <br />
+    
      <Spinner pathColor='black' size='small' animation='slow' />
-     <br />
+
      <Spinner pathColor='blue' size='small' animation='slow' />
-     <br />
+     
      <Spinner pathColor='white' size='small' animation='slow' />
-     <br />
-     <hr />
-     <br />
-     <h5>Spinner Sizes</h5>
+```
+
+# Spinner Sizes
+```html
      <Spinner pathColor='grey' size='small' animation='slow' />
      <br />
      <Spinner pathColor='grey' size='medium' animation='slow' />
      <br />
      <Spinner pathColor='grey' size='large' animation='slow' />
-     <br />
-     <hr />
-     <br />
+```
+
+# Spinner Animation Speed
+```html
      <h5>Spinner Speeds</h5>
      <Spinner pathColor='grey' size='small' animation='slow' />
      <br />
